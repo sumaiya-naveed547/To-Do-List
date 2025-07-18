@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing:border-box;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+            height: 100vh;
+            padding: 10px;
+            background-image:url(./images/clock.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            flex-direction: column;
+            margin-top: 10rem;
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        .btn{
+            width: 15rem;
+            height: 3rem;
+            border-radius: 23px;
+            margin-top: 25px;
+            background-color:pink;
+            box-shadow: 5px 5px 10px black;
+            cursor: pointer;
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .link{
+            text-decoration: none;
+        }
+
+        @media(max-width:768px){
+            .container{
+                background-repeat: no-repeat;
+                background-position:center;
+                background-size: cover;
+            }
+
+            .btn{
+                width: 9rem;
+                margin-bottom: 19px;
+            }
+
+            .box{
+                margin-top: 5rem;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="clock.jpg" alt="" class="fluid-image"> -->
+    <div class="container">
+        <div class="box">
+            <h2>plan your tasks!</h2>
+            <a href="to-do.html" class="link">
+                <button class="btn">Get started!</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
